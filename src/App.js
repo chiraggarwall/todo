@@ -3,7 +3,6 @@ import "./App.css";
 
 function App() {
   const [todoList, setTodoList] = useState([]);
-
   function updateText(id, inputText) {
     let updateList = todoList.map((e) => {
       if (e.id === id) {
@@ -14,6 +13,7 @@ function App() {
 
     setTodoList(updateList);
   }
+
   function handleDelete(id) {
     console.log(id);
     const updateList = todoList.filter((e) => {
